@@ -1,0 +1,74 @@
+{
+  "hero": {
+    "large": {
+      "width": 1440,
+      "height": 960,
+      "bytes": 142444
+    },
+    "small": {
+      "width": 640,
+      "height": 427,
+      "bytes": 47210
+    }
+  },
+  "coffee": {
+    "large": {
+      "width": 1440,
+      "height": 1440,
+      "bytes": 177678
+    },
+    "small": {
+      "width": 640,
+      "height": 640,
+      "bytes": 62162
+    }
+  },
+  "cake": {
+    "large": {
+      "width": 1440,
+      "height": 1440,
+      "bytes": 167786
+    },
+    "small": {
+      "width": 640,
+      "height": 640,
+      "bytes": 58040
+    }
+  },
+  "interior": {
+    "large": {
+      "width": 1440,
+      "height": 960,
+      "bytes": 200802
+    },
+    "small": {
+      "width": 640,
+      "height": 427,
+      "bytes": 54684
+    }
+  },
+  "croissant": {
+    "large": {
+      "width": 1440,
+      "height": 1440,
+      "bytes": 197522
+    },
+    "small": {
+      "width": 640,
+      "height": 640,
+      "bytes": 68344
+    }
+  },
+  "matcha": {
+    "large": {
+      "width": 1440,
+      "height": 1440,
+      "bytes": 190960
+    },
+    "small": {
+      "width": 640,
+      "height": 640,
+      "bytes": 68158
+    }
+  }
+}

@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.vite/
+.npm-cache/
+test-results/
+*.log
+playwright-report/
+# Local environment files can contain secrets.
+.env
+.env.*

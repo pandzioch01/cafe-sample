@@ -1,0 +1,28 @@
+{
+  "name": "miedzy-cafe",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "check:secrets": "node scripts/check-secrets.mjs",
+    "build": "npm run check:secrets && vite build && node scripts/check-secrets.mjs dist",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "playwright test"
+  },
+  "dependencies": {
+    "@fontsource/cormorant-garamond": "5.3.0",
+    "@fontsource/dm-sans": "5.3.0",
+    "embla-carousel-react": "8.6.0",
+    "lucide-react": "1.47.0",
+    "motion": "13.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "sharp": "0.35.4",
+    "vite": "8.3.0"
+  }
+}

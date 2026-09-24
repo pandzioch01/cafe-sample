@@ -1,0 +1,31 @@
+{
+  "mode": "Built-in image_gen",
+  "date": "2026-09-22",
+  "note": "Original images generated for this project. WebP derivatives in public/images/.",
+  "prompts": [
+    {
+      "key": "hero",
+      "prompt": "Use case: photorealistic-natural. Asset type: wide hero photograph for a beautiful independent Polish specialty coffee shop website called Między. Create one photorealistic editorial lifestyle photograph, landscape 3:2 format, no collage. Close view of a beautiful ivory ceramic cappuccino cup with precise rosetta latte art on a matching saucer, a flaky golden croissant on a small ceramic plate to the right, on a warm dark walnut cafe table. Coffee cup occupies lower-middle-left area, beautifully inviting, tangible crema and ceramic. Behind is a softly blurred charming European cafe with honey oak, linen, a vase, subtle green plants and a tall sunny window to the right. Late morning golden sun rakes across table from right, long interesting shadows. Premium magazine photography, warm creamy brown palette, soft natural film grain, natural imperfect details, 50mm lens f/2.8. Full bleed image, no borders, no text, no logos, no watermark, no people."
+    },
+    {
+      "key": "coffee",
+      "prompt": "Use case: photorealistic-natural. Asset type: menu product photograph for independent specialty cafe Między. One editorial food photograph, square format. A single hand-thrown off-white ceramic flat white cup on an ivory saucer on a warmly lit walnut coffee table. Perfect detailed white tulip latte art, caramel crema, cup fills center two-thirds. A stainless teaspoon casually rests on saucer. Background softly blurred warm cafe, beautiful natural sunlight from left, rich cocoa shadows, analogue film aesthetic, realistic delicious microtexture. Photograph angled about 45 degrees above table, close-up, elegant artisan coffee styling. No text, no logo, no watermark, no collage."
+    },
+    {
+      "key": "cake",
+      "prompt": "Use case: photorealistic-natural. Asset type: menu food photograph for independent cafe Między. One editorial patisserie photograph, square format. A thick beautiful slice of burnt Basque cheesecake, creamy pale vanilla interior and caramelized dark amber top, on a rustic small ivory ceramic plate, a small silver dessert fork to the side. Walnut table, soft warm afternoon window sunlight from left, rich chocolate shadows, minimal styling, beautifully realistic food, premium food magazine 50mm macro aesthetic, slight analogue grain, warm beige and golden palette. Close angle at table level 35 degrees, slice in center with room around plate. No text, no logos, no watermark, no collage."
+    },
+    {
+      "key": "interior",
+      "prompt": "Use case: photorealistic-natural. Asset type: atmosphere photograph of the independent Polish cafe Między. One beautiful architecture magazine photograph, landscape 3:2 format. A cozy small European specialty cafe, warm muted cream plaster walls, walnut bentwood chairs, little round dark wood tables, cognac leather built-in bench along the left wall, simple oak counter in background with a beautiful espresso machine, tall windows on right casting warm afternoon light onto aged wood floor. A large olive tree near the window, just a few books and small vases, sophisticated but lived-in inviting atmosphere. Tactile linen, oak and natural material detail. Wide eye-level composition with depth, 35mm architecture photography, photorealistic editorial, natural warm film colors, no people, no text, no signs, no logos, no watermark."
+    },
+    {
+      "key": "croissant",
+      "prompt": "Use case: photorealistic-natural. Asset type: product photo for an artisan Polish cafe Między. Single editorial food photograph, square image, no collage. One beautiful golden butter croissant with crunchy delicate laminated layers on a small matte ivory stoneware plate on a walnut cafe table. A little linen napkin partly visible. Close 40 degree angle, natural window sun from left, soft attractive shadows, warm cream caramel cocoa palette. Delicious tangible textures, premium food magazine photography, analogue film feel, minimal styling, no text, no logos, no watermark."
+    },
+    {
+      "key": "matcha",
+      "prompt": "Use case: photorealistic-natural. Asset type: drink product photograph for a specialty cafe website Między. Single editorial photograph, square image, no collage. A beautiful clear tumbler of iced matcha latte, pale oat milk lower layer softly blending with rich earthy green matcha upper layer, four translucent ice cubes, glass condensation. On a dark walnut cafe table in warm natural afternoon sunshine from the left, softly blurred linen and cafe in background, subtle film grain, sophisticated food magazine photograph, close 40 degree angle, inviting warm organic palette with beautiful green accent. No text, no logos, no watermark."
+    }
+  ]
+}
