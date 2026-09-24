@@ -22,6 +22,7 @@ Podgląd: http://127.0.0.1:5173. Produkcja: `npm run build`, następnie `npm run
 - Historia kawiarni i płynny, zapętlony slider zdjęć: strzałki, przeciąganie myszką i gesty na telefonie, wybór zdjęcia kropkami, klawiatura oraz powiększenie. Slider pokazuje trzy zdjęcia na komputerze, dwa na tablecie i jedno z fragmentem kolejnego na telefonie.
 - Godziny otwarcia, kontakt e-mail, link do mapy i FAQ.
 - Mobilna nawigacja, semantyczny HTML, obsługa klawiatury, fokus w oknach dialogowych i respektowanie `prefers-reduced-motion`.
+- Dopasowana wizualnie strona 404, favicon oraz opisowe teksty alternatywne dla wszystkich zdjęć w obu językach.
 - Lokalne fonty oraz lokalne fotografie WebP w dwóch rozmiarach, `srcset`, leniwe ładowanie poza zdjęciem głównym.
 
 ## Personalizacja

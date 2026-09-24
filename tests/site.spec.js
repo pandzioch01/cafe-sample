@@ -30,6 +30,26 @@ test('full menu, gallery arrows, and FAQ work', async ({ page }) => {
   await expect(page.getByText(/Czworonożni goście są u nas mile widziani/)).toBeVisible();
 });
 
+test('images have alt text and the favicon uses the deployment base', async ({ page }) => {
+  await page.goto('/cafe-sample/');
+  const images = page.locator('img');
+  await expect(images.first()).toBeVisible();
+  expect(await images.count()).toBeGreaterThan(0);
+  for (const image of await images.all()) {
+    await expect(image).toHaveAttribute('alt', /\S+/);
+  }
+  await expect(page.locator('link[rel="icon"]')).toHaveAttribute('href', '/cafe-sample/favicon.svg');
+});
+
+test('the matching 404 page leads guests home', async ({ page }) => {
+  await page.goto('/cafe-sample/404.html');
+  await expect(page).toHaveTitle('404 — Między');
+  await expect(page.getByRole('heading', { name: 'Zabłądziłeś między stronami.' })).toBeVisible();
+  await expect(page.getByRole('link', { name: /Wróć do strony głównej/ })).toHaveAttribute('href', '/cafe-sample/');
+  await expect(page.locator('link[rel="icon"]')).toHaveAttribute('href', '/cafe-sample/favicon.svg');
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+});
+
 for (const width of [320, 390, 768, 1440]) {
   test(`responsive page and images at ${width}px`, async ({ page }) => {
     await page.setViewportSize({ width, height: 900 });
