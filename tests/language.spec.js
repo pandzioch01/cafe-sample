@@ -13,7 +13,7 @@ test('English covers the page, full menu, allergens, gallery and accessible labe
   await expect(page.locator('meta[name="description"]')).toHaveAttribute('content', /specialty coffee, homemade bakes/);
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Good things');
   await expect(page.getByRole('button', { name: 'English', exact: true })).toHaveAttribute('aria-pressed', 'true');
-  await expect(page.getByAltText('A cappuccino and a butter croissant on a wooden table in a sunlit café')).toBeVisible();
+  await expect(page.locator('.hero-photo img')).toHaveAttribute('alt', 'Cappuccino with latte art and a croissant on a dark wooden table');
   await page.getByRole('button', { name: 'Full menu', exact: true }).click();
   const dialog = page.getByRole('dialog');
   await expect(dialog.getByRole('heading', { name: 'Something sweet' })).toBeVisible();
@@ -25,7 +25,7 @@ test('English covers the page, full menu, allergens, gallery and accessible labe
   await expect(dialog).toContainText('1 piece');
   await page.getByRole('button', { name: 'Close dialog' }).click();
   await page.getByRole('button', { name: 'Enlarge photo: Your favourite table' }).click();
-  await expect(dialog).toContainText('Plenty of light, warm wood and room to breathe.');
+  await expect(dialog).toContainText('Illustrative photo — this is not the Między café.');
   await page.keyboard.press('ArrowRight');
   await expect(dialog).toContainText('Unhurried mornings');
   await page.keyboard.press('Escape');

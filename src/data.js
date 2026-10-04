@@ -38,11 +38,11 @@ export const categoryPhotos = { coffee: 'coffee', sweets: 'cake', other: 'matcha
 export const categoryCaptions = { coffee: 'Dobre ziarna. Dobre poranki.', sweets: 'Szczęście pachnie masłem.', other: 'Każdy ma swój mały rytuał.' };
 
 export const gallery = [
-  { image: 'interior', title: 'Twój ulubiony stolik', description: 'Dużo światła, ciepłe drewno i miejsce na oddech.' },
-  { image: 'hero', title: 'Poranki bez pośpiechu', description: 'Kawa, croissant i cały dzień przed Tobą.' },
-  { image: 'cake', title: 'Zawsze jest pora na ciasto', description: 'Małe przyjemności, które pieczemy na miejscu.' },
-  { image: 'coffee', title: 'Z miłości do kawy', description: 'Każda filiżanka zasługuje na chwilę uwagi.' },
-  { image: 'matcha', title: 'Odrobina zieleni', description: 'Dla tych, którzy lubią swój dzień z matchą.' },
+  { image: 'interior', title: 'Twój ulubiony stolik', alt: 'Drewniane stoliki i skórzane krzesła w kawiarni', description: 'Zdjęcie ilustracyjne — nie przedstawia kawiarni Między.' },
+  { image: 'hero', title: 'Poranki bez pośpiechu', alt: 'Cappuccino z latte art i croissant na ciemnym drewnianym stole', description: 'Kawa, croissant i cały dzień przed Tobą.' },
+  { image: 'cake', title: 'Zawsze jest pora na ciasto', alt: 'Kawałek sernika baskijskiego na talerzu', description: 'Sernik baskijski wśród małych przyjemności.' },
+  { image: 'coffee', title: 'Z miłości do kawy', alt: 'Filiżanka kawy z latte art na drewnianym stole', description: 'Każda filiżanka zasługuje na chwilę uwagi.' },
+  { image: 'matcha', title: 'Odrobina zieleni', alt: 'Mrożona matcha z mlekiem w przezroczystej szklance', description: 'Dla tych, którzy lubią swój dzień z matchą.' },
 ];
 
 export const faqs = [

@@ -3,72 +3,72 @@
     "large": {
       "width": 1440,
       "height": 960,
-      "bytes": 142444
+      "bytes": 84600
     },
     "small": {
       "width": 640,
       "height": 427,
-      "bytes": 47210
+      "bytes": 27902
     }
   },
   "coffee": {
     "large": {
       "width": 1440,
       "height": 1440,
-      "bytes": 177678
+      "bytes": 153064
     },
     "small": {
       "width": 640,
       "height": 640,
-      "bytes": 62162
+      "bytes": 42180
     }
   },
   "cake": {
     "large": {
       "width": 1440,
       "height": 1440,
-      "bytes": 167786
+      "bytes": 390350
     },
     "small": {
       "width": 640,
       "height": 640,
-      "bytes": 58040
+      "bytes": 59018
     }
   },
   "interior": {
     "large": {
       "width": 1440,
       "height": 960,
-      "bytes": 200802
+      "bytes": 46586
     },
     "small": {
       "width": 640,
       "height": 427,
-      "bytes": 54684
+      "bytes": 17148
     }
   },
   "croissant": {
     "large": {
       "width": 1440,
       "height": 1440,
-      "bytes": 197522
+      "bytes": 139396
     },
     "small": {
       "width": 640,
       "height": 640,
-      "bytes": 68344
+      "bytes": 38374
     }
   },
   "matcha": {
     "large": {
       "width": 1440,
       "height": 1440,
-      "bytes": 190960
+      "bytes": 45416
     },
     "small": {
       "width": 640,
       "height": 640,
-      "bytes": 68158
+      "bytes": 12498
     }
   }
 }

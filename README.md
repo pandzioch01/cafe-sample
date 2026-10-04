@@ -1,6 +1,6 @@
 # Między — szablon kawiarni
 
-Autorska, responsywna strona w React i Vite. Kremowy papier, typografia Cormorant Garamond i DM Sans, oliwkowe detale oraz sześć wygenerowanych fotografii kawy, ciast i wnętrza.
+Autorska, responsywna strona w React i Vite. Kremowy papier, typografia Cormorant Garamond i DM Sans, oliwkowe detale oraz sześć fotografii stockowych kawy, ciast i wnętrza.
 
 ## Uruchomienie
 
@@ -32,10 +32,10 @@ Podgląd: http://127.0.0.1:5173. Produkcja: `npm run build`, następnie `npm run
 - `src/i18n/messages.js`: tłumaczenia angielskie (kluczami są polskie teksty). Po zmianie polskiej treści dopisz jej angielski odpowiednik tutaj. Ceny pozostają w PLN w obu językach.
 - `src/i18n/LanguageProvider.jsx`: wybór i zapis języka, aktualizacja `lang`, tytułu i opisu strony oraz przejście językowe. Domyślnie polski; zapis w `localStorage` pod kluczem `miedzy-language`. Brak dostępu do pamięci nie blokuje przełączania.
 - `src/styles.css`: kolory, typografia, odstępy i progi responsywności.
-- `public/images/`: gotowe fotografie; `docs/image-prompts.json`: pełne prompty z wbudowanego narzędzia image_gen; `docs/image-manifest.json`: rozmiary obrazów.
+- `public/images/`: lokalne fotografie WebP; `docs/IMAGE_CREDITS.md`: autorzy, źródła i licencje; `docs/image-manifest.json`: rozmiary obrazów.
 - `docs/INSPIRATIONS.md`: źródła inspiracji i wykorzystane komponenty; `docs/licenses/`: licencje komponentów.
 
-Między jest fikcyjną marką demonstracyjną. Adres, menu i godziny to dane przykładowe, a adres e-mail używa zarezerwowanej domeny `.example`. Przed publikacją podmień je, zweryfikuj alergeny i zmień mapkę na rzeczywistą lokalizację. Strona celowo nie udaje działających rezerwacji ani zamówień: kontakt otwiera program pocztowy, a mapa Google Maps. Nie ma backendu, kont użytkowników, analityki ani plików cookie. Wszystkie fotografie są wygenerowane przez AI.
+Między jest fikcyjną marką demonstracyjną. Adres, menu i godziny to dane przykładowe, a adres e-mail używa zarezerwowanej domeny `.example`. Przed publikacją podmień je, zweryfikuj alergeny i zmień mapkę na rzeczywistą lokalizację. Strona celowo nie udaje działających rezerwacji ani zamówień: kontakt otwiera program pocztowy, a mapa Google Maps. Nie ma backendu, kont użytkowników, analityki ani plików cookie. Zdjęcia na stronie są poglądowymi fotografiami stockowymi i nie przedstawiają prawdziwej kawiarni Między ani jej produktów. Źródła i licencje opisano w [docs/IMAGE_CREDITS.md](docs/IMAGE_CREDITS.md).
 
 ## Weryfikacja
 

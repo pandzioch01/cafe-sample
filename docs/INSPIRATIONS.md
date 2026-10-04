@@ -24,6 +24,6 @@ Przegląd wykonano 22 września 2026 r. Projekt jest własną kompozycją; nie k
 
 ## Zdjęcia i fonty
 
-Wszystkie sześć fotografii powstało w wbudowanym `image_gen`. Pełne prompty znajdują się w `image-prompts.json`. Pliki `public/images/*-large.webp` mają szerokość 1440 px, a `*-small.webp` 640 px. Konwersja do WebP nie zmieniała treści obrazów. Oryginały PNG pozostawiono w katalogu narzędzia; projekt jest całkowicie samodzielny i korzysta wyłącznie z własnych plików WebP.
+Sześć fotografii na stronie pochodzi z Pexels i Unsplash. Autorów, bezpośrednie strony zdjęć oraz licencje podano w [IMAGE_CREDITS.md](IMAGE_CREDITS.md). Pliki `public/images/*-large.webp` mają szerokość 1440 px, a `*-small.webp` 640 px. Zdjęcia są przycięte do układu strony i zapisane lokalnie; strona nie pobiera ich z zewnętrznych serwerów podczas wyświetlania.
 
 Fonty Cormorant Garamond i DM Sans są dołączone lokalnie przez pakiety Fontsource (SIL Open Font License). Ikony pochodzą z Lucide. Licencje zależności są w ich pakietach npm.

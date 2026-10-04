@@ -56,16 +56,16 @@ function Hero() {
   return <section className="hero container" aria-labelledby="hero-title">
     <div className="hero-copy">
       <Reveal><p className="eyebrow hero-eyebrow"><span className="little-sun"><Sun size={15} /></span> {t("TWOJA CHWILA W ŚRODKU MIASTA")}</p></Reveal>
-      <Reveal delay={0.08}><h1 id="hero-title">{t("Dobre rzeczy")}<br />{t("dzieją się")}<br /><em>między.</em><span className="heading-star" aria-hidden="true">✳</span></h1></Reveal>
+      <Reveal delay={0.08}><h1 id="hero-title">{t("Dobre rzeczy")}<br />{t("dzieją się")}<br /><em>między.</em><svg className="heading-star" viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true" focusable="false"><path d="M32 5v54M5 32h54M12.9 12.9l38.2 38.2m0-38.2L12.9 51.1" /></svg></h1></Reveal>
       <Reveal delay={0.16}><p className="hero-description">{t("Między jednym planem a drugim.")}<br />{t("Między łykiem kawy a kolejnym kęsem.")}<br />{t("Znajdź chwilę, która jest tylko Twoja.")}</p></Reveal>
       <Reveal delay={0.24} className="hero-actions"><AttractLink href="#menu">{t("Zobacz nasze menu")}</AttractLink><a className="text-link" href="#o-nas">{t("Poznaj Między")} <ArrowRight size={16} /></a></Reveal>
       <Reveal delay={0.3} className="hero-footnote"><span className="line" /> {t("KAWA SPECIALTY. DOMOWE WYPIEKI. BEZ POŚPIECHU.")}</Reveal>
     </div>
     <Reveal className="hero-visual" delay={0.1}>
-      <div className="hero-photo"><Photo name="hero" alt={t("Cappuccino i maślany croissant na drewnianym stoliku w słonecznej kawiarni")} eager /></div>
+      <div className="hero-photo"><Photo name="hero" alt={t("Cappuccino z latte art i croissant na ciemnym drewnianym stole")} eager /></div>
       <div className="coffee-seal"><SpinningText>{t("MAŁE PRZYJEMNOŚCI • KAŻDEGO DNIA • ")}</SpinningText><Sun size={34} strokeWidth={1.25} /></div>
       <div className="hero-photo-note"><span className="note-icon"><Coffee size={25} strokeWidth={1.4} /></span><div><strong>{t("Tu jest Ci dobrze.")}</strong><span>{t("Reszta może chwilę poczekać.")}</span></div><span className="note-heart" aria-hidden="true">♡</span></div>
-      <div className="photo-caption"><span>{t("TWÓJ ULUBIONY PRZYSTANEK")}</span><span>{t("Warszawa, Powiśle")} <ArrowUpRight size={13} /></span></div>
+      <div className="photo-caption"><span>{t("TWÓJ ULUBIONY PRZYSTANEK")}</span><span>{t("ZDJĘCIE POGLĄDOWE")}</span></div>
     </Reveal>
   </section>;
 }
@@ -113,7 +113,7 @@ function MenuSection({ onProduct, onFullMenu }) {
 function Story() {
   const { t } = useLanguage();
   return <section id="o-nas" className="story-section" aria-labelledby="story-title"><div className="container story-grid">
-    <Reveal className="story-photos"><div className="story-main-photo"><Photo name="interior" alt={t("Przytulne wnętrze Między: drewniane stoliki, skórzana kanapa i światło z dużych okien")} /></div><div className="story-small-photo"><Photo name="croissant" alt={t("Świeżo upieczony croissant podany na ceramicznym talerzu")} sizes="300px" /></div><span className="story-photo-tag">{t("Dobrze, że jesteś.")}</span></Reveal>
+    <Reveal className="story-photos"><div className="story-main-photo"><Photo name="interior" alt={t("Drewniane stoliki i skórzane krzesła w kawiarni")} /></div><span className="story-photo-disclaimer">{t("Zdjęcie ilustracyjne — nie przedstawia kawiarni Między.")}</span><div className="story-small-photo"><Photo name="croissant" alt={t("Maślany croissant na ceramicznym talerzu")} sizes="300px" /></div><span className="story-photo-tag">{t("Dobrze, że jesteś.")}</span></Reveal>
     <Reveal className="story-copy"><p className="eyebrow">{t("CZEŚĆ. TO MY, MIĘDZY.")}</p><h2 id="story-title">{t("Nie tylko kawa.")}<br /><em>{t("Twoje małe miejsce.")}</em></h2><p>{t("Wierzymy, że najlepsze momenty nie potrzebują wielkich planów. Wystarczy dobry stolik, ciepła filiżanka i ktoś po drugiej stronie. Albo po prostu Ty.")}</p><p>{t("Stworzyliśmy Między, żeby mieć gdzie zwolnić. Sami wybieramy ziarna, pieczemy nasze ulubione ciasta i pamiętamy, jaką kawę pijesz. Rozgość się — jesteś u siebie.")}</p><div className="story-signature"><span>{t("Do zobaczenia przy kawie,")}</span><strong>{t("ekipa Między")} <Heart size={18} /></strong></div><div className="amenities"><span><PawPrint size={17} /> {t("Psiolubni")}</span><span><Wifi size={17} /> Wi-Fi</span><span><Leaf size={17} /> {t("Roślinne opcje")}</span></div></Reveal>
   </div></section>;
 }
@@ -154,14 +154,14 @@ function Gallery({ onOpen }) {
   }
 
   return <section id="galeria" className="gallery-section section container" aria-labelledby="gallery-title">
-    <Reveal className="section-heading"><div><p className="eyebrow">{t("ŚWIATŁO, ZAPACH, SPOKÓJ")}</p><h2 id="gallery-title">{t("Zobacz, jak u nas ")}<em>{t("jest.")}</em></h2></div><div className="gallery-controls"><button className="icon-button" aria-controls="gallery-viewport" aria-label={t("Poprzednie zdjęcia")} onClick={() => slider?.scrollPrev(reduced)}><ArrowLeft size={20} /></button><button className="icon-button" aria-controls="gallery-viewport" aria-label={t("Następne zdjęcia")} onClick={() => slider?.scrollNext(reduced)}><ArrowRight size={20} /></button></div></Reveal>
+    <Reveal className="section-heading"><div><p className="eyebrow">{t("ŚWIATŁO, ZAPACH, SPOKÓJ")}</p><h2 id="gallery-title">{t("Kadry małych ")}<em>{t("przyjemności.")}</em></h2></div><div className="gallery-controls"><button className="icon-button" aria-controls="gallery-viewport" aria-label={t("Poprzednie zdjęcia")} onClick={() => slider?.scrollPrev(reduced)}><ArrowLeft size={20} /></button><button className="icon-button" aria-controls="gallery-viewport" aria-label={t("Następne zdjęcia")} onClick={() => slider?.scrollNext(reduced)}><ArrowRight size={20} /></button></div></Reveal>
     <p id="gallery-help" className="sr-only">{t('Przeciągnij zdjęcia lub użyj strzałek w lewo i w prawo. Klawisze Home i End przenoszą do pierwszego i ostatniego zdjęcia.')}</p>
     <div ref={viewportRef} id="gallery-viewport" className="gallery-viewport" tabIndex={0} role="group" aria-roledescription={t('karuzela')} aria-label={t('Galeria zdjęć')} aria-describedby="gallery-help" onKeyDown={onGalleryKey}>
       <div className="gallery-track">{gallery.map((photo, index) => <div className="gallery-slide" key={photo.image} role="group" aria-roledescription={t('slajd')} aria-label={`${index + 1} / ${gallery.length}`} aria-hidden={!visibleSlides.includes(index)} inert={!visibleSlides.includes(index)}>
-        <button className="gallery-card" onClick={() => onOpen(index)} aria-label={`${t('Powiększ zdjęcie')}: ${t(photo.title)}`}><Photo name={photo.image} alt={t(photo.title)} sizes="(max-width: 760px) 85vw, (max-width: 1100px) 50vw, 33vw" /><div className="gallery-caption"><span>{t(photo.title)}</span><span><MoveUpRight size={21} /></span></div></button>
+        <button className="gallery-card" onClick={() => onOpen(index)} aria-label={`${t('Powiększ zdjęcie')}: ${t(photo.title)}`}><Photo name={photo.image} alt={t(photo.alt)} sizes="(max-width: 760px) 85vw, (max-width: 1100px) 50vw, 33vw" /><div className="gallery-caption"><span>{t(photo.title)}</span><span><MoveUpRight size={21} /></span></div></button>
       </div>)}</div>
     </div>
-    <div className="gallery-footnote"><span>{t("Trochę codzienności z naszego małego świata.")}</span><div className="gallery-dots" role="group" aria-label={t('Wybierz zdjęcie')}>{gallery.map((photo, index) => <button key={photo.image} className="gallery-dot" aria-label={`${t('Przejdź do zdjęcia')}: ${t(photo.title)}`} aria-current={offset === index ? 'true' : undefined} aria-controls="gallery-viewport" onClick={() => slider?.scrollTo(index, reduced)}><span /></button>)}</div><span aria-live="polite" aria-atomic="true">{String(offset + 1).padStart(2, '0')} <span className="muted">/ {String(gallery.length).padStart(2, '0')}</span></span></div>
+    <div className="gallery-footnote"><span>{t("Zdjęcia poglądowe — nie przedstawiają prawdziwej kawiarni Między ani jej produktów.")}</span><div className="gallery-dots" role="group" aria-label={t('Wybierz zdjęcie')}>{gallery.map((photo, index) => <button key={photo.image} className="gallery-dot" aria-label={`${t('Przejdź do zdjęcia')}: ${t(photo.title)}`} aria-current={offset === index ? 'true' : undefined} aria-controls="gallery-viewport" onClick={() => slider?.scrollTo(index, reduced)}><span /></button>)}</div><span aria-live="polite" aria-atomic="true">{String(offset + 1).padStart(2, '0')} <span className="muted">/ {String(gallery.length).padStart(2, '0')}</span></span></div>
   </section>;
 }
 
@@ -193,7 +193,7 @@ function Faq() {
 
 function Footer() {
   const { t } = useLanguage();
-  return <footer className="footer"><div className="container"><div className="footer-top"><div><Brand footer /><p>{t("Kawa. Ciasto. Dobry czas.")}</p></div><nav aria-label={t("Nawigacja w stopce")}>{navLinks.map(link => <a key={link.href} href={link.href}>{t(link.label)}</a>)}</nav><a className="back-to-top" href="#start">{t("Do góry")} <ArrowUpRight size={18} /></a></div><div className="footer-bottom"><span>© {new Date().getFullYear()} {t("Między. Z miłości do małych przyjemności.")}</span><span>{t("Szablon demonstracyjny · fikcyjna kawiarnia i dane · zdjęcia AI")}</span></div></div></footer>;
+  return <footer className="footer"><div className="container"><div className="footer-top"><div><Brand footer /><p>{t("Kawa. Ciasto. Dobry czas.")}</p></div><nav aria-label={t("Nawigacja w stopce")}>{navLinks.map(link => <a key={link.href} href={link.href}>{t(link.label)}</a>)}</nav><a className="back-to-top" href="#start">{t("Do góry")} <ArrowUpRight size={18} /></a></div><div className="footer-bottom"><span>© {new Date().getFullYear()} {t("Między. Z miłości do małych przyjemności.")}</span><span>{t("Szablon demonstracyjny · fikcyjna kawiarnia i dane · zdjęcia stockowe, poglądowe")}</span></div></div></footer>;
 }
 
 function FullMenu({ onProduct }) {
@@ -227,7 +227,7 @@ export default function App() {
     <Dialog open={modal !== null} onClose={close} title={t(modal?.type === 'menu' ? 'Pełna karta menu' : modal?.type === 'product' ? modal.product.name : 'Galeria zdjęć')} className={isGallery ? 'lightbox' : modal?.type === 'menu' ? 'menu-dialog' : 'product-dialog'}>
       {modal?.type === 'menu' && <FullMenu onProduct={showProduct} />}
       {modal?.type === 'product' && <div className="product-modal">{modal.product.image && <Photo name={modal.product.image} alt={t(modal.product.name)} eager sizes="600px" />}<div className="product-modal-copy"><p className="eyebrow">{t("MIĘDZY · MAŁE PRZYJEMNOŚCI")}</p><div className="product-modal-heading"><h2>{t(modal.product.name)}</h2><strong>{price(modal.product.price)}</strong></div><p>{t(modal.product.description)}</p><span className="serving-size">{t(modal.product.size)}</span><div className="allergen-note"><Leaf size={18} /><div><strong>{t("Skład i alergeny")}</strong><p>{t(modal.product.allergens)}</p></div></div><button className="text-link" onClick={() => setModal({ type: 'menu' })}>{t("Zobacz całą kartę")} <ArrowRight size={16} /></button></div></div>}
-      {isGallery && <div className="lightbox-inner"><Photo name={currentPhoto.image} alt={t(currentPhoto.title)} eager sizes="90vw" /><div className="lightbox-caption"><div aria-live="polite"><h2>{t(currentPhoto.title)}</h2><p>{t(currentPhoto.description)}</p></div><div className="lightbox-controls"><button className="icon-button" aria-label={t("Poprzednie zdjęcie")} onClick={() => setModal({ type: 'gallery', index: (modal.index - 1 + gallery.length) % gallery.length })}><ArrowLeft size={20} /></button><span>{modal.index + 1} / {gallery.length}</span><button className="icon-button" aria-label={t("Następne zdjęcie")} onClick={() => setModal({ type: 'gallery', index: (modal.index + 1) % gallery.length })}><ArrowRight size={20} /></button></div></div></div>}
+      {isGallery && <div className="lightbox-inner"><Photo name={currentPhoto.image} alt={t(currentPhoto.alt)} eager sizes="90vw" /><div className="lightbox-caption"><div aria-live="polite"><h2>{t(currentPhoto.title)}</h2><p>{t(currentPhoto.description)}</p></div><div className="lightbox-controls"><button className="icon-button" aria-label={t("Poprzednie zdjęcie")} onClick={() => setModal({ type: 'gallery', index: (modal.index - 1 + gallery.length) % gallery.length })}><ArrowLeft size={20} /></button><span>{modal.index + 1} / {gallery.length}</span><button className="icon-button" aria-label={t("Następne zdjęcie")} onClick={() => setModal({ type: 'gallery', index: (modal.index + 1) % gallery.length })}><ArrowRight size={20} /></button></div></div></div>}
     </Dialog>
   </>;
 }
